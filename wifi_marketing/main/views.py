@@ -4,8 +4,8 @@ from django.http import HttpResponse
 def admin(request):
     return render(request,"index_admin.html")
 
-def user(request):
-    return render(request,"index_user.html")
+def admin_user(request):
+    return render(request,"index_admin_user.html")
 
 #Sử dụng 1 form popup, không reload trang
 def edit(request):
@@ -31,3 +31,13 @@ def login(request):
 
 def dashboard_user(request):
     return render(request,"dashboard_user.html")
+
+
+def user(request):
+    return render(request,"index_user.html")
+
+def user_location(request):
+    return render(request,"index_user_location.html")
+
+def user_customer(request):
+    return render(request,"index_user_customer.html")
